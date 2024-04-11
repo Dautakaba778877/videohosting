@@ -1,0 +1,27 @@
+<!-- upload.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка видео</title>
+</head>
+<body>
+<div class="mainContainer">
+    <div class="header">
+        <h1>Загрузка видео</h1>
+    <form  action="/upload" method="post" enctype="multipart/form-data">
+        <div class="downBlock">
+        <input  type="file" name="video">
+        </div>
+        <div class="secondBlock">
+        <input class="blockthird" type="text" name="title" placeholder="Название видео">
+        <button class="blocksecond" type="submit">Загрузить</button>
+        </div>
+    </form>
+    </div>
+</div>
+
+</body>
+</html>

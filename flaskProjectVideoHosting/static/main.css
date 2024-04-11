@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: flex;
+}
+.mainContainer {
+    display: flex;
+    position: relative;
+    width: 90vw;
+    top: 0.5vw;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    width: 90vw;
+    top: 0;
+    height: 10vw;
+}
+
+.downBlock{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 10vw;
+}
+
+.secondBlock{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.blocksecond{
+    position: relative;
+    display: flex;
+    justify-items: center;
+}

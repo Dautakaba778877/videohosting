@@ -1,0 +1,24 @@
+<!-- admin.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Администратор</title>
+</head>
+<body>
+    <h1>Страница администратора</h1>
+    <ul>
+        {% for video in videos %}
+            <li>
+                <video width="400vw" height="300vw" controls>
+                    <source src="{{ url_for('static', filename='uploads/' + video['filename']) }}" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <p width="10vw  " >Название: {{ video['title'] }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
